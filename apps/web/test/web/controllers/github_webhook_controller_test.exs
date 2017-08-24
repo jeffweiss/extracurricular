@@ -43,6 +43,6 @@ defmodule Web.GitHubWebhookControllerTest do
     Process.sleep(10)
 
     opportunities = Opportunities.all()
-    assert length(opportunities) == 1
+    assert length(opportunities.entries) == 1
   end
 end
